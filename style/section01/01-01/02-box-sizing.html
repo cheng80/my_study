@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>박스 사이징</title>
+
+    <!-- <style>
+        * { /* 모든 요소에 적용되는 스타일 */
+            padding: 0;
+            margin: 0;
+            box-sizing: content-box;
+        }
+    </style> -->
+
+    <style>
+        
+        
+        .박스1 {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            padding-top: 30px;
+            padding-left: 30px;
+            border: 10px solid blue;
+            /* box-sizing 속성은 박스의 크기를 계산하는 방법을 지정합니다. */
+            box-sizing: border-box; /*콘텐츠+패딩+보더 포함,  total 300px*/
+        }
+
+        .박스2 {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            padding-top: 30px;
+            padding-left: 30px;
+            border: 10px solid lightgreen;
+            box-sizing: content-box; /*콘텐츠만 포함,  total 350px*/
+        }
+
+        #아이디박스 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- class 는 중복지정 가능, id 는 유일해야 함 -->
+    <div class = "박스1">
+        <input type="text" / >
+    </div>
+    <div class = "박스1">
+        <input type="text" / >
+    </div>
+
+    <div class = "박스2">
+        <input type="text" / >
+    </div>
+
+    <div id = "아이디박스">
+    </div>
+    
+</body>
+</html>

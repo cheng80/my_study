@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>플랙스박스 세로실습</title>
+    <style>
+        body {
+            /* 이 viewport-height => 브라우저의 창 크기를 기준으로 높이를 설정 */
+            height: 100vh; 
+            margin: 0;
+            padding: 0;
+        }
+        .부모 {
+            display: flex;
+            flex-direction: column; /* 아이템을 세로로 정렬 */
+            justify-content: center; /* 아이템을 세로 방향으로 가운데 정렬 */
+            background-color: skyblue;
+            align-items: center; /* 아이템을 가로 방향으로 가운데 정렬 */
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class = "부모">
+        <div>자식1</div>
+        <div>자식2</div>
+
+    </div>
+    
+</body>
+</html>

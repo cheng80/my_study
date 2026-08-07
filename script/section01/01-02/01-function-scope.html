@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <title>함수실습</title>
+    <script>
+        //여기는 JS 영역
+        function 더하기() {
+            const a = 1+2;
+            console.log(a);
+            return a;
+        }
+
+        // 함수 호출
+        더하기();
+
+        const 함수결과 = 더하기();
+        console.log("함수가 반환한 결과 값", 함수결과);
+
+        // 함수 인자값 전달하기
+        function 더하기2(a, b) {
+            const c = a + b;
+            console.log(c);
+            return c;
+        }
+        // 함수 호출 예시
+        const 함수결과2 = 더하기2(55, 45);
+        console.log("함수가 반환한 결과 값2", 함수결과2);
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

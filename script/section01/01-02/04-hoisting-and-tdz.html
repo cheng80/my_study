@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>호이스팅과 TDZ 실습</title>
+    <script>
+        /*
+        console.log(내가만든옛날변수); //undefined, 변수호이스팅 이기 때문에 에러가 발생하지 않음
+        var 내가만든옛날변수 = "옛날 변수의 값"
+        //TDZ(Temporal Dead Zone) : let, const는 호이스팅이 되지만 TDZ 때문에 에러가 발생
+        // console.log(내가만든요즘변수); //ReferenceError: Cannot access '내가만든요즘변수' before initialization
+        console.log(내가만든요즘변수2);
+
+        let 내가만든요즘변수 = "요즘 변수의 값";
+        const 내가만든요즘변수2 = "요즘 변수의 값2";
+        */
+        //////////////////
+        
+        console.log(옛날함수1);
+        // console.log(요즘함수1);
+        // console.log(요즘함수2);
+
+        //함수선언식
+        function 옛날함수1() {
+            console.log("옛날함수1");
+        }
+
+        //함수표현식
+        const 요즘함수1 = function() {
+            console.log("요즘함수1");
+        }
+        //화살표람수
+        const 요즘함수2 = () => {
+            console.log("요즘함수2");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

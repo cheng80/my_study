@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>이곳은 일기 상세페이지</title>
+    <script>
+        const 쿼리스트링 = location.search;
+        const 잘게나누어담은통 = new URLSearchParams(쿼리스트링);
+        const 일기번호상자 = 잘게나누어담은통.get("my-number");
+        console.log(일기번호상자);
+
+        alert(`일기번호상자 : ${일기번호상자}번 일기 상세페이지입니다.`);
+    </script>
+</head>
+<body>
+    <div>제목</div>
+    <div>내용</div>
+    
+</body>
+</html>
