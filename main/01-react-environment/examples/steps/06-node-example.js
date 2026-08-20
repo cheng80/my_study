@@ -6,4 +6,5 @@ const students = 33;
 
 console.log(`안녕하세요. ${courseName} 수업입니다. 오늘은 ${students}명이 수업에 참여했어요.`);
 
-// Terminal에서 Excute 할 수 있다. 판교
+// Terminal에서 실행 할 수 있다.
+// node 06-node-example.js
