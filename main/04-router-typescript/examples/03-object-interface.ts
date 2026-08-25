@@ -11,7 +11,6 @@ interface TravelProduct {
     tags: string[]; // tags 속성은 문자열 배열이에요. 여러 개의 문자열을 담을 수 있어요.
 }
 
-
 // product 객체는 TravelProduct 인터페이스를 따르기 때문에, TravelProduct에서 정의한 모든 속성을 가지고 있어야 해요.
 const product: TravelProduct = {
     id: "TP001",
@@ -21,17 +20,11 @@ const product: TravelProduct = {
     tags: ["city", "sightseeing", "culture"]
 };
 
-// description는 옵셔널 이기 때문에 나중에 추가해 줄 수도 있어요.
+// descriptiondms 옵셔널 이기 때문에 나중에 추가해 줄 수도 있어요.
 product.description = "A wonderful trip to the city that never sleeps."; // 선택적 속성이기 때문에 나중에 추가할 수도 있어요.
 
-// 매개변수에도 interface를 붙이면 함수 안에서 객체의 모양을 알 수 있어요.
-function printProduct(product: TravelProduct) {
-    console.log(`Product ID: ${product.id}`);
-    console.log(`Name: ${product.name}`);
-    console.log(`Price: $${product.price}`);
-    console.log(`Location: ${product.location}`);
-    console.log(`Description: ${product.description ?? '아직 설명이 없어요.'}`);
-    console.log(`Tags: ${product.tags.join(", ")}`);
-}
 
-printProduct(product);
+// 매개변수에도 interface를 붙이면 함수 안에서 객체의 모양을 알 수 있어요.
+function printProduct(productData: TravelProduct) {
+    console.log(`Product ID: ${productData.description ?? '아직 설명이 없어요'}`);
+}

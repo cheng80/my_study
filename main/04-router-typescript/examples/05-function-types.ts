@@ -21,8 +21,6 @@ const formatPrice: Formatter = (price) => {
 const totalPrice = calculateTotal(78000, 2);
 const discountedPrice = calculateDiscount(totalPrice, 0.1);
 
-const formattedPrice : string = formatPrice(discountedPrice);
-
-console.log(`총합: ${totalPrice}원`);
-console.log(`할인 후 가격: ${discountedPrice}원`);
-console.log(`포맷된 가격: ${formattedPrice}`);
+// 원하는 값을 안전하게 얻어서 출력할 수 있게되요.
+console.log(`할인 전: ${formatPrice(totalPrice)}`);
+console.log(`할인 후: ${formatPrice(discountedPrice)}`);

@@ -12,7 +12,7 @@ type Product = {
     name: string;
 };
 // 두 번째 응답에서 사용할 회원 타입이에요.
-type User = {
+type ApiUser = {
     id: string;
     nickname: string;
 };
@@ -24,8 +24,8 @@ const response: ApiResponse<Product> = {
     message: "Success"
 };
 
-// Data 자리에 User[]를 넣어서 ApiResponse<User[]> 타입을 만들었어요.
-const userResponse: ApiResponse<User[]> = {
+// Data 자리에 ApiUser[]를 넣어서 ApiResponse<ApiUser[]> 타입을 만들었어요.
+const userResponse: ApiResponse<ApiUser[]> = {
     data: [
         { id: "user-1", nickname: "Alice" },
         { id: "user-2", nickname: "Bob" },

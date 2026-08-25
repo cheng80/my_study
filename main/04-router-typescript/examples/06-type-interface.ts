@@ -3,14 +3,14 @@
 type Status = "ready" | "loading" | "success" | "error";
 
 // type으로 객체의 모양을 정할 수도 있어요.
-type User1 = {
+type User = {
     id: string;
     name: string;
 }
 
 // &는 두 타입을 합친다는 뜻이에요.
 // UserWithEmail에는 id, name, email이 모두 필요해요.
-type UserWithEmail = User1 & {
+type UserWithEmail = User & {
     email: string;
 }
 
@@ -23,8 +23,8 @@ interface Seller {
     shopName: string;
 }
 
-const status1: Status = "ready";
-const user: User1 = { id: "1", name: "Alice" };
+const status: Status = "ready";
+const user: User = { id: "1", name: "Alice" };
 
 // Seller의 두 interface가 합쳐져서 id와 shopName이 모두 필요해요.
 const seller: Seller = { id: "seller-1", shopName: "Alice's Shop" };

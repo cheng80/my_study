@@ -21,17 +21,6 @@ function printProductId(productId: ProductId) {
     }
 }
 
-
-function makeProductId(id: ProductId) {
-    // 위 union 타입은 어떤 타입이 들어올지 알 수 없기 때문에, narrowing을 통해 타입을 좁혀야 해요.
-    if (typeof id === "string") {
-        return `Product-${id}`;
-    } else {
-        return `Product-${id.toString()}`;
-    }
-}
-
-
 // Narrowing을 통해 타입을 좁혀서 여러가지 작업을 할 수 있어요.
 function makeProductPath(productId: ProductId) {
     // number일 때와 string일 때를 구분해서 다른 주소를 만들어요.
@@ -41,4 +30,3 @@ function makeProductPath(productId: ProductId) {
     // 여기에서 productId는 string이므로 toLowerCase를 사용할 수 있어요.
     return `/special-products/${productId.toLowerCase()}`;
 }
-
