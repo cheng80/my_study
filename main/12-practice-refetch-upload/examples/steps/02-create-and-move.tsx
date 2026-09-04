@@ -34,8 +34,8 @@ export default function Createmutation() {
         console.log(newId);
 
         // 등록이 끝나면 새 상품의 상세 페이지로 이동시키기.
-        router.push(`/travelproducs/${newId}`)
+        router.push(`/travelproducs/${newId}`);
     }
 
-    return <button onClick={handleCreate}>여행 등록</button>
+    return <button onClick={handleCreate}>등록하고 이동</button>
 }

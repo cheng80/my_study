@@ -91,6 +91,46 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <section>
+        <h2>Day13 페이지네이션 · 검색 · Codegen</h2>
+        <div className={styles.cardList}>
+          <Link className={styles.questionCard} href="/practice/boards">
+            <strong>게시판 검색·페이지네이션</strong>
+            <span>전체 개수를 이용해 페이지 버튼 만들기</span>
+          </Link>
+          <Link className={styles.questionCard} href="/practice/travelproducts">
+            <strong>숙박권 분류·검색</strong>
+            <span>분류 버튼과 검색 조건을 목록 API에 전달하기</span>
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2>Day14 상태 관리 · 인증 복구 · React Query</h2>
+        <div className={styles.cardList}>
+          <Link className={styles.questionCard} href="/final">
+            <strong>0. Final 리스트</strong>
+            <span>리스트페이지</span>
+          </Link>
+          <Link className={styles.questionCard} href="/final/zustand">
+            <strong>1. Zustand 전역 상태</strong>
+            <span>두 컴포넌트가 같은 store 값 사용하기</span>
+          </Link>
+          <Link className={styles.questionCard} href="/final/auth-restore">
+            <strong>2. refresh token</strong>
+            <span>새로고침 뒤 access token 복구하기</span>
+          </Link>
+          <Link className={styles.questionCard} href="/final/react-query">
+            <strong>3. React Query</strong>
+            <span>외부 REST API 조회와 cache 확인하기</span>
+          </Link>
+          <Link className={styles.questionCard} href="/final/triptalk">
+            <strong>4. TripTalk 인증 적용</strong>
+            <span>로그인·복구·보호 페이지의 실제 연결 순서</span>
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }
